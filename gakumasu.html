@@ -16,16 +16,32 @@
                 <video id="video" autoplay playsinline muted></video>
                 <div class="text-area">
                     <div class="speakername-area">
-                        <p id="speakername">リーリヤ</p>
+                            <select id="character">
+                                <option value="lilja">リーリヤ</option>
+                                <option value="saki">咲季</option>
+                                <option value="temari">手毬</option>
+                                <option value="kotone">ことね</option>
+                                <option value="mao">麻央</option>
+                                <option value="china">千奈</option>
+                                <option value="sumika">清夏</option>
+                                <option value="hiro">広</option>
+                                <option value="sena">星南</option>
+                                <option value="ume">佑芽</option>
+                                <option value="rinami">莉波</option>
+                                <option value="misuzu">美鈴</option>
+                            </select>
                     </div>
                     <div class="dialogue-area">
-                        <p id="dialogue-content">かわいい……です……！<br>メイドさん……！</p>
+                        <p id="dialogue-content">
+                            <input type="text" name="talk1" value="かわいい……です……！">
+                            <input type="text" name="talk2" value="メイドさん……！">
+                        </p>
                     </div>
                 </div>
             </div>
-            <button id="start">カメラを起動</button>
+            <button id="start">カメラ起動</button>
         </div>
+
         <script src="script.js"></script>
     </body>
 </html>
-
