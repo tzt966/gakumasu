@@ -4,7 +4,16 @@
     --basecolor: #ffffff;
     /*キャラカラー*/
     --colorone: #d1e3e5;
-    --colortwo: #98ccd7;
+    --colortwo: #c8caca;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrapper{
+    padding: 0px;
+    margin: 0px;
 }
 
 #mobile{
@@ -13,6 +22,8 @@
     position: relative;
     width: calc(1179 * var(--tani));
     height: calc(2556 * var(--tani));
+    padding: 0px;
+    margin: 0px;
     /*background: repeating-linear-gradient(to right, #e98304,#e98304 calc(var(--tani)*15),#ecc7c7 calc(var(--tani)*15),#ecc7c7 calc(var(--tani)*30))*/
     background-color: #000000;
 }
@@ -79,6 +90,7 @@
     outline: solid calc(var(--tani)*5) rgba(255,255,255,0.7);
     outline-offset: calc(var(--tani)*-5);
     backdrop-filter: blur(calc(var(--tani)*50));
+    -webkit-backdrop-filter: blur(calc(var(--tani)*50));
 }
 
 .dialogue-area p{
@@ -97,3 +109,7 @@
     line-height: calc(var(--tani)*60);
 }
 
+button{
+    width:calc(var(--tani)*300);
+    height:calc(var(--tani)*100);
+}
