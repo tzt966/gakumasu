@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>学マス会話シミュレーター</title>
+        <link rel="stylesheet" href="gakumasu.css">
+
+        <!--webフォント読み込み-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="mobile">
+                <video id="video" autoplay playsinline muted></video>
+                <div class="text-area">
+                    <div class="speakername-area">
+                        <p id="speakername">リーリヤ</p>
+                    </div>
+                    <div class="dialogue-area">
+                        <p id="dialogue-content">かわいい……です……！<br>メイドさん……！</p>
+                    </div>
+                </div>
+            </div>
+            <button id="start">カメラ起動</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+:root{
+    --tani: 0.32px;
+    --textcolor: #2e2e2e;
+    --basecolor: #ffffff;
+    /*キャラカラー*/
+    --colorone: #d1e3e5;
+    --colortwo: #98ccd7;
+}
+
+#mobile{
+    /*描画エリアサイズの設定(iphone15)*/
+    display: block;
+    width: calc(1179 * var(--tani));
+    height: calc(2556 * var(--tani));
+    /*background: repeating-linear-gradient(to right, #e98304,#e98304 calc(var(--tani)*15),#ecc7c7 calc(var(--tani)*15),#ecc7c7 calc(var(--tani)*30))*/
+    background-color: #000000;
+}
+
+#video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/*会話エリア*/
+.text-area{
+    display: block;
+    position: absolute;
+    text-align: left;
+    margin-left: calc((1179 - 1048)* var(--tani) * 0.5);
+    top: calc(1843 * var(--tani));
+}
+
+/*発言者*/
+.speakername-area{
+    width: calc(464 * var(--tani));
+    height: calc(70 * var(--tani));
+    padding: 0px;
+    margin: 0px;
+    /*角丸の処理*/
+    border-top-left-radius: calc(35 * var(--tani));
+    border-top-right-radius: calc(35 * var(--tani));
+    border-bottom-right-radius: calc(35 * var(--tani));
+    /*発話者の色*/
+    background: linear-gradient(to right,var(--colorone),var(--colortwo));
+}
+
+.speakername-area p{
+    padding: 0px;
+    margin: 0px;
+    padding-left: calc(var(--tani)*34);
+    padding-top: calc(var(--tani)*12);
+    
+    /*文字の設定*/
+    font-family: "IBM Plex Sans JP", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--textcolor);
+    letter-spacing: 0.015em;
+    font-size: calc(var(--tani)*39);
+}
+/*発話コンテンツ*/
+.dialogue-area{
+    display: block;
+    width: calc(1048 * var(--tani));
+    height: calc(298 * var(--tani));
+    padding: 0px;
+    margin: 0px;
+    /*角丸の処理*/
+    border-top-right-radius: calc(38 * var(--tani));
+    border-bottom-left-radius: calc(38 * var(--tani));
+    /*背景の線と透明度*/
+    background-color: rgba(255,255,255,0.45);
+    outline: solid calc(var(--tani)*5) rgba(255,255,255,0.7);
+    outline-offset: calc(var(--tani)*-5);
+    backdrop-filter: blur(calc(var(--tani)*16));
+}
+
+.dialogue-area p{
+    padding: 0px;
+    margin: 0px;
+    padding-left: calc(var(--tani)*60);
+    padding-top: calc(var(--tani)*55);
+    
+    /*文字の設定*/
+    font-family: "IBM Plex Sans JP", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--textcolor);
+    letter-spacing: 0.015em;
+    font-size: calc(var(--tani)*43);
+    line-height: calc(var(--tani)*60);
+}
+
+button{
+    z-index: 10;
+}
