@@ -183,7 +183,7 @@ select.temari{
 
 select.kotone{
     background: linear-gradient(to right, #f8d71e,#feb6d3);
-    color: #ffffff;
+    color: var(--textcolor);
 }
 select.mao{
     background: linear-gradient(to right, #c45dca,#faaaa9);
@@ -229,3 +229,4 @@ select.misuzu{
     background: linear-gradient(to right, #70a3fc,#ceafff);
     color: #ffffff;
 }
+
