@@ -9,7 +9,7 @@ start.addEventListener("click", async () => {
          width: { ideal: 1179 },
          height: { ideal: 2556 },
          frameRate: { ideal: 30 },
-         facingMode: "user"
+         facingMode: "environment"
     },
     audio: false
     });
@@ -23,3 +23,4 @@ const select = document.getElementById('character');
 select.addEventListener('change', ()=> {
     select.className = select.value
 });
+
