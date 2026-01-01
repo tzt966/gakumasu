@@ -8,7 +8,8 @@ start.addEventListener("click", async () => {
          facingMode: "environment" ,
          width: { ideal: 1179 },
          height: { ideal: 2556 },
-         frameRate: { ideal: 30 }
+         frameRate: { ideal: 30 },
+         facingMode: "user"
     },
     audio: false
     });
