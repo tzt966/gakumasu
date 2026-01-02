@@ -8,8 +8,6 @@ start.addEventListener("click", async () => {
     const stream = await navigator.mediaDevices.getUserMedia({
       video: {
         facingMode: "environment",
-        width:  { ideal: 1280 }, // 横長で取得
-        height: { ideal: 720 },
         frameRate: { ideal: 30 }
       },
       audio: false
@@ -54,3 +52,4 @@ function draw() {
 
   requestAnimationFrame(draw);
 }
+
