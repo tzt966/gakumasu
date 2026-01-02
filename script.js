@@ -33,23 +33,8 @@ function draw() {
     return;
   }
 
-  // 高さ固定・横だけ狭める（例：4:3）
-  const TARGET_RATIO = 4 / 3;
-  const targetWidth = vh * TARGET_RATIO;
-
-  canvas.width  = targetWidth;
-  canvas.height = vh;
-
-  const sx = (vw - targetWidth) / 2;
-
-  ctx.drawImage(
-    video,
-    sx, 0,                 // 切り出し開始
-    targetWidth, vh,       // 切り出しサイズ
-    0, 0,
-    targetWidth, vh        // 描画サイズ
-  );
 
   requestAnimationFrame(draw);
 }
+
 
