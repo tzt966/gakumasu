@@ -1,5 +1,5 @@
 :root{
-    --tani: 0.3px;
+    --tani: 1px;
     --textcolor: #2e2e2e;
     --basecolor: #ffffff;
     /*キャラカラー*/
@@ -235,3 +235,4 @@ select.misuzu{
     background: linear-gradient(to right, #70a3fc,#ceafff);
     color: #ffffff;
 }
+
