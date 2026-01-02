@@ -1,5 +1,5 @@
 :root{
-    --tani: 1px;
+    --tani: 0.3px;
     --textcolor: #2e2e2e;
     --basecolor: #ffffff;
     /*キャラカラー*/
@@ -28,10 +28,13 @@ body{
     background-color: #000000;
 }
 
+/*ビデオ*/
 #video {
   position: absolute;
   inset: 0;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: 0;
   pointer-events: none;
 }
@@ -181,7 +184,7 @@ select.temari{
 
 select.kotone{
     background: linear-gradient(to right, #f8d71e,#feb6d3);
-    color: var(--textcolor);
+    color: #ffffff;
 }
 select.mao{
     background: linear-gradient(to right, #c45dca,#faaaa9);
@@ -227,5 +230,3 @@ select.misuzu{
     background: linear-gradient(to right, #70a3fc,#ceafff);
     color: #ffffff;
 }
-
-
