@@ -1,5 +1,5 @@
 :root{
-    --tani: 1px;
+    --tani: 0.3px;
     --textcolor: #2e2e2e;
     --basecolor: #ffffff;
     /*キャラカラー*/
@@ -40,8 +40,6 @@ body{
 }
 
 #canvas{
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     display: block;
 }
@@ -237,4 +235,3 @@ select.misuzu{
     background: linear-gradient(to right, #70a3fc,#ceafff);
     color: #ffffff;
 }
-
